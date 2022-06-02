@@ -1,3 +1,5 @@
+const moment = require("moment");
+
 /* Mostrar la fecha de hoy con el siguiente formato 2022-05-30
 Hacerlo primero usando ‘Date’ de Javascript
 Luego usando la librería Moment.js*/
@@ -10,8 +12,13 @@ let dia = fecha.getDate()
 let mes = fecha.getMonth() + 1
 let anyo = fecha.getFullYear()
 
-
 console.log(`${anyo}-0${mes}-${dia}`)*/
+
+//CON MOMENT
+
+
+const fecha = moment();
+console.log((moment().format('YYYY MM DD')));
 
 /*const fechaNacimiento = document.getElementById("fechaNacimiento");
 const edad = document.getElementById("edad");
@@ -94,3 +101,4 @@ window.addEventListener('load', function () {
     alert("Error fechas");   
  } 
 }*/
+
