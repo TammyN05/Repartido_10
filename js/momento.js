@@ -17,8 +17,27 @@ console.log(`${anyo}-0${mes}-${dia}`)*/
 //CON MOMENT
 
 
-const fecha = moment();
-console.log((moment().format('YYYY MM DD')));
+/*const fecha = moment();
+console.log((moment().format('YYYY MM DD')));*/
+
+
+//EJERCICIO 2
+
+/*function existeFecha(fecha){ 
+    var fechaf = fecha.split("/");
+    var day = fechaf[0];
+    var month = fechaf[1];
+    var year = fechaf[2];
+    var date = new Date(year,month,"");
+    if((day- 0) >(date.getDate()-0)){
+          return false;
+    }
+    return true;
+}
+console.log(existeFecha("30/05/2022"));
+console.log(existeFecha("30/02/2022"));*/
+
+//EJERCICIO 3
 
 /*const fechaNacimiento = document.getElementById("fechaNacimiento");
 const edad = document.getElementById("edad");
@@ -54,51 +73,4 @@ window.addEventListener('load', function () {
     });
 
 });*/
-
-/*function validarFecha(fecha) {  
-      
-    try{        
-        var fecha = fecha.split("/");        
-        var dia = fecha[0];        
-        var mes = fecha[1];        
-        var ano = fecha[2];        
-        var estado = true;  
-         
-        if ((dia.length == 2) && (mes.length == 2) && (ano.length == 4)) {        
-            switch (parseInt(mes)) {        
-                case 1:dmax = 31;break;        
-                case 2: if (ano % 4 == 0) dmax = 29; else dmax = 28;        
-                break;        
-                case 3:dmax = 31;break;        
-                case 4:dmax = 30;break;        
-                case 5:dmax = 31;break;        
-                case 6:dmax = 30;break;        
-                case 7:dmax = 31;break;        
-                case 8:dmax = 31;break;        
-                case 9:dmax = 30;break;        
-                case 10:dmax = 31;break;       
-                case 11:dmax = 30;break;      
-                case 12:dmax = 31;break;       
-            }  
-              
-            dmax!=""?dmax:dmax=-1;if ((dia >= 1) && (dia <= dmax) && (mes >= 1) && (mes <= 12)) {        
-            for (var i = 0; i < fecha[0].length; i++) {         
-                diaC = fecha[0].charAt(i).charCodeAt(0);        
-                (!((diaC > 47) && (diaC < 58)))?estado = false:'';       
-                mesC = fecha[1].charAt(i).charCodeAt(0);        
-                (!((mesC > 47) && (mesC < 58)))?estado = false:'';       
-            }  
-         
-        } for (var i = 0; i < fecha[2].length; i++) {  
-         
-        anoC = fecha[2].charAt(i).charCodeAt(0);  
-         
-        (!((anoC > 47) && (anoC < 58)))?estado = false:'';        
-        }} else estado = false;        
-        return estado;    
-        
-   }catch(err){  
-    alert("Error fechas");   
- } 
-}*/
 
