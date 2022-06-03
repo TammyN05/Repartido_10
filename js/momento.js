@@ -37,6 +37,14 @@ console.log((moment().format('YYYY MM DD')));*/
 console.log(existeFecha("30/05/2022"));
 console.log(existeFecha("30/02/2022"));*/
 
+// CON MOMENT
+
+/*function validarFecha(fecha){
+    return moment(fecha, 'DD/MM/YYYY').isValid() ? console.log("Fecha valida") : console.log("Fecha no valida")
+}
+validarFecha("29/02/2022")*/
+
+
 //EJERCICIO 3
 
 /*const fechaNacimiento = document.getElementById("fechaNacimiento");
@@ -74,3 +82,9 @@ window.addEventListener('load', function () {
 
 });*/
 
+/*let fechaPersona = "2021-06-02"
+
+let fechaMoment = moment(fechaPersona, "YYYY-MM-DD");
+let years = moment().diff(fechaMoment, 'years', false);
+let days = moment().diff(fechaMoment.add(years, 'years'), 'days', false);
+console.log(years);*/
